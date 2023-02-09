@@ -52,9 +52,26 @@ class Limb():
         self.name = name
         self.midpoint = None
         self.orthog = None
+	self.gx = None
+	self.gy = None
+	self.gz = None
+	self.ax = None
+	self.ay = None
+	self.az = None
+	self.mx = None
+	self.my = None
+	self.mz = None
 
     def update(self, gx, gy, gz, ax, ay, az, mx, my, mz):
-        
+        self.gx = gx
+	self.gy = gy
+	self.gz = gz
+	self.ax = ax
+	self.ay = ay
+	self.az = az
+	self.mx = mx
+	self.my = my
+	self.mz = mz
         print(az)
 
 
